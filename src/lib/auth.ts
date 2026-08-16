@@ -12,6 +12,16 @@ export const auth = betterAuth({
     enabled: true,
     autoSignIn: true,
   },
+  socialProviders: {
+    github: {
+      clientId: process.env.GITHUB_CLIENT_ID as string,
+      clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
+    },
+    google: {
+      clientId: process.env.GOOGLE_CLIENT_ID as string,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+    },
+  },
   plugins: [
     polar({
       client: polarClient,
@@ -20,7 +30,7 @@ export const auth = betterAuth({
         checkout({
           products: [
             {
-              productId: "e96ce59c-ef73-4f0f-aa06-a771df74b120",
+              productId: "f81be8a8-45e1-4e45-a1e9-b9d3fd79f814",
               slug: "pro",
             }
           ],
