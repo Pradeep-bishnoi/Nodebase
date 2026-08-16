@@ -33,6 +33,7 @@
     "clsx": "^2.1.1",
     "date-fns": "^4.4.0",
     "embla-carousel-react": "^8.6.0",
+    "handlebars": "^4.7.9",
     "ingest": "^1.0.0",
     "inngest": "^3.54.0",
     "jotai": "^2.20.2",
